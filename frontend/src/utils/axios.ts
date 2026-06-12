@@ -2,8 +2,10 @@ import axios from 'axios'
 import router from '@/router'
 import { storage } from '@/utils/storage'
 
+const baseURL = import.meta.env.VITE_API_BASE_URL || '/api'
+
 const instance = axios.create({
-  baseURL: '/api',
+  baseURL: baseURL,
   timeout: 10000
 })
 
