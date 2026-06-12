@@ -30,4 +30,5 @@ jwt:
 
 logging:
   level:
-    com.example.mealplan: debug
+    com.example.mealplan: info
+    org.springframework.web: info
