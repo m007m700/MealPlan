@@ -65,7 +65,7 @@ async function fetchTodayMenu(): Promise<void> {
     }
 }
 
-async function handleMealTypeChange(type: MealType): void {
+async function handleMealTypeChange(type: MealType): Promise<void> {
     activeMealType.value = type
     selectedDishes.value[type] = []
     await fetchTodayMenu()
